@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		451ED2DE1EED0C9800F20D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */; };
-		451ED2E01EED0C9800F20D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2DF1EED0C9800F20D58 /* ViewController.swift */; };
+		451ED2E01EED0C9800F20D58 /* PSIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2DF1EED0C9800F20D58 /* PSIViewController.swift */; };
 		451ED2E31EED0C9800F20D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451ED2E11EED0C9800F20D58 /* Main.storyboard */; };
 		451ED2E51EED0C9800F20D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451ED2E41EED0C9800F20D58 /* Assets.xcassets */; };
 		451ED2E81EED0C9800F20D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */; };
-		451ED2F31EED0C9800F20D58 /* HazeRadarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2F21EED0C9800F20D58 /* HazeRadarTests.swift */; };
-		451ED2FE1EED0C9800F20D58 /* HazeRadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */; };
 		451ED30D1EED0FE200F20D58 /* psi.json in Resources */ = {isa = PBXBuildFile; fileRef = 451ED30C1EED0FE200F20D58 /* psi.json */; };
 		451ED3171EED10A400F20D58 /* PSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3161EED10A400F20D58 /* PSI.swift */; };
+		451ED3191EED178F00F20D58 /* PSIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3181EED178F00F20D58 /* PSIData.swift */; };
+		451ED31B1EED179F00F20D58 /* PSIRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED31A1EED179F00F20D58 /* PSIRegion.swift */; };
+		451ED3211EED1C1D00F20D58 /* PSIBindingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3201EED1C1D00F20D58 /* PSIBindingTest.swift */; };
 		F699AB705B24CC980502DBB4 /* Pods_HazeRadar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,31 +28,24 @@
 			remoteGlobalIDString = 451ED2D91EED0C9800F20D58;
 			remoteInfo = HazeRadar;
 		};
-		451ED2FA1EED0C9800F20D58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 451ED2D21EED0C9700F20D58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 451ED2D91EED0C9800F20D58;
-			remoteInfo = HazeRadar;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		451ED2DA1EED0C9800F20D58 /* HazeRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazeRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		451ED2DF1EED0C9800F20D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		451ED2DF1EED0C9800F20D58 /* PSIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIViewController.swift; sourceTree = "<group>"; };
 		451ED2E21EED0C9800F20D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		451ED2E41EED0C9800F20D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451ED2E71EED0C9800F20D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451ED2E91EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451ED2EE1EED0C9800F20D58 /* HazeRadarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HazeRadarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		451ED2F21EED0C9800F20D58 /* HazeRadarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazeRadarTests.swift; sourceTree = "<group>"; };
 		451ED2F41EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		451ED2F91EED0C9800F20D58 /* HazeRadarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HazeRadarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazeRadarUITests.swift; sourceTree = "<group>"; };
-		451ED2FF1EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451ED30C1EED0FE200F20D58 /* psi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psi.json; sourceTree = "<group>"; };
 		451ED3161EED10A400F20D58 /* PSI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSI.swift; sourceTree = "<group>"; };
+		451ED3181EED178F00F20D58 /* PSIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIData.swift; sourceTree = "<group>"; };
+		451ED31A1EED179F00F20D58 /* PSIRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIRegion.swift; sourceTree = "<group>"; };
+		451ED3201EED1C1D00F20D58 /* PSIBindingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIBindingTest.swift; sourceTree = "<group>"; };
+		451ED3221EED217800F20D58 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/HazeRadar-adurcognnehnwhfabmuloiqneuar/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		750B076C7AD70045E4631DF1 /* Pods-HazeRadar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.debug.xcconfig"; sourceTree = "<group>"; };
 		C79B90153F6B5B5A53FEF67B /* Pods-HazeRadar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.release.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.release.xcconfig"; sourceTree = "<group>"; };
 		E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HazeRadar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		451ED2F61EED0C9800F20D58 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,7 +75,6 @@
 			children = (
 				451ED2DC1EED0C9800F20D58 /* HazeRadar */,
 				451ED2F11EED0C9800F20D58 /* HazeRadarTests */,
-				451ED2FC1EED0C9800F20D58 /* HazeRadarUITests */,
 				451ED2DB1EED0C9800F20D58 /* Products */,
 				B67B071578F1A3B69B5734B8 /* Pods */,
 				545436A8AFD9241C8F144393 /* Frameworks */,
@@ -100,7 +86,6 @@
 			children = (
 				451ED2DA1EED0C9800F20D58 /* HazeRadar.app */,
 				451ED2EE1EED0C9800F20D58 /* HazeRadarTests.xctest */,
-				451ED2F91EED0C9800F20D58 /* HazeRadarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,12 +95,14 @@
 			children = (
 				451ED30C1EED0FE200F20D58 /* psi.json */,
 				451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */,
-				451ED2DF1EED0C9800F20D58 /* ViewController.swift */,
+				451ED2DF1EED0C9800F20D58 /* PSIViewController.swift */,
 				451ED2E11EED0C9800F20D58 /* Main.storyboard */,
 				451ED2E41EED0C9800F20D58 /* Assets.xcassets */,
 				451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */,
 				451ED2E91EED0C9800F20D58 /* Info.plist */,
 				451ED3161EED10A400F20D58 /* PSI.swift */,
+				451ED3181EED178F00F20D58 /* PSIData.swift */,
+				451ED31A1EED179F00F20D58 /* PSIRegion.swift */,
 			);
 			path = HazeRadar;
 			sourceTree = "<group>";
@@ -123,24 +110,16 @@
 		451ED2F11EED0C9800F20D58 /* HazeRadarTests */ = {
 			isa = PBXGroup;
 			children = (
-				451ED2F21EED0C9800F20D58 /* HazeRadarTests.swift */,
 				451ED2F41EED0C9800F20D58 /* Info.plist */,
+				451ED3201EED1C1D00F20D58 /* PSIBindingTest.swift */,
 			);
 			path = HazeRadarTests;
-			sourceTree = "<group>";
-		};
-		451ED2FC1EED0C9800F20D58 /* HazeRadarUITests */ = {
-			isa = PBXGroup;
-			children = (
-				451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */,
-				451ED2FF1EED0C9800F20D58 /* Info.plist */,
-			);
-			path = HazeRadarUITests;
 			sourceTree = "<group>";
 		};
 		545436A8AFD9241C8F144393 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				451ED3221EED217800F20D58 /* SwiftyJSON.framework */,
 				E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */,
 			);
 			name = Frameworks;
@@ -196,24 +175,6 @@
 			productReference = 451ED2EE1EED0C9800F20D58 /* HazeRadarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		451ED2F81EED0C9800F20D58 /* HazeRadarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 451ED3081EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadarUITests" */;
-			buildPhases = (
-				451ED2F51EED0C9800F20D58 /* Sources */,
-				451ED2F61EED0C9800F20D58 /* Frameworks */,
-				451ED2F71EED0C9800F20D58 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				451ED2FB1EED0C9800F20D58 /* PBXTargetDependency */,
-			);
-			name = HazeRadarUITests;
-			productName = HazeRadarUITests;
-			productReference = 451ED2F91EED0C9800F20D58 /* HazeRadarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,15 +187,12 @@
 				TargetAttributes = {
 					451ED2D91EED0C9800F20D58 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B4S39U7L6D;
 						ProvisioningStyle = Automatic;
 					};
 					451ED2ED1EED0C9800F20D58 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 451ED2D91EED0C9800F20D58;
-					};
-					451ED2F81EED0C9800F20D58 = {
-						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B4S39U7L6D;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 451ED2D91EED0C9800F20D58;
 					};
@@ -255,7 +213,6 @@
 			targets = (
 				451ED2D91EED0C9800F20D58 /* HazeRadar */,
 				451ED2ED1EED0C9800F20D58 /* HazeRadarTests */,
-				451ED2F81EED0C9800F20D58 /* HazeRadarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,13 +230,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		451ED2EC1EED0C9800F20D58 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		451ED2F71EED0C9800F20D58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,8 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				451ED2E01EED0C9800F20D58 /* ViewController.swift in Sources */,
+				451ED2E01EED0C9800F20D58 /* PSIViewController.swift in Sources */,
 				451ED3171EED10A400F20D58 /* PSI.swift in Sources */,
+				451ED31B1EED179F00F20D58 /* PSIRegion.swift in Sources */,
+				451ED3191EED178F00F20D58 /* PSIData.swift in Sources */,
 				451ED2DE1EED0C9800F20D58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,15 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				451ED2F31EED0C9800F20D58 /* HazeRadarTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		451ED2F51EED0C9800F20D58 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				451ED2FE1EED0C9800F20D58 /* HazeRadarUITests.swift in Sources */,
+				451ED3211EED1C1D00F20D58 /* PSIBindingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,11 +314,6 @@
 			isa = PBXTargetDependency;
 			target = 451ED2D91EED0C9800F20D58 /* HazeRadar */;
 			targetProxy = 451ED2EF1EED0C9800F20D58 /* PBXContainerItemProxy */;
-		};
-		451ED2FB1EED0C9800F20D58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 451ED2D91EED0C9800F20D58 /* HazeRadar */;
-			targetProxy = 451ED2FA1EED0C9800F20D58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,6 +435,7 @@
 			baseConfigurationReference = 750B076C7AD70045E4631DF1 /* Pods-HazeRadar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4S39U7L6D;
 				INFOPLIST_FILE = HazeRadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadar;
@@ -509,6 +449,7 @@
 			baseConfigurationReference = C79B90153F6B5B5A53FEF67B /* Pods-HazeRadar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4S39U7L6D;
 				INFOPLIST_FILE = HazeRadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadar;
@@ -522,6 +463,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B4S39U7L6D;
 				INFOPLIST_FILE = HazeRadarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarTests;
@@ -536,38 +478,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B4S39U7L6D;
 				INFOPLIST_FILE = HazeRadarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HazeRadar.app/HazeRadar";
-			};
-			name = Release;
-		};
-		451ED3091EED0C9800F20D58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = HazeRadarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = HazeRadar;
-			};
-			name = Debug;
-		};
-		451ED30A1EED0C9800F20D58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = HazeRadarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = HazeRadar;
 			};
 			name = Release;
 		};
@@ -590,6 +507,7 @@
 				451ED3041EED0C9800F20D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451ED3051EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadarTests" */ = {
 			isa = XCConfigurationList;
@@ -598,14 +516,7 @@
 				451ED3071EED0C9800F20D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		451ED3081EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				451ED3091EED0C9800F20D58 /* Debug */,
-				451ED30A1EED0C9800F20D58 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

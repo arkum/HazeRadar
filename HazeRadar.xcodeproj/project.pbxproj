@@ -14,6 +14,8 @@
 		451ED2E81EED0C9800F20D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */; };
 		451ED2F31EED0C9800F20D58 /* HazeRadarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2F21EED0C9800F20D58 /* HazeRadarTests.swift */; };
 		451ED2FE1EED0C9800F20D58 /* HazeRadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */; };
+		451ED30D1EED0FE200F20D58 /* psi.json in Resources */ = {isa = PBXBuildFile; fileRef = 451ED30C1EED0FE200F20D58 /* psi.json */; };
+		451ED3171EED10A400F20D58 /* PSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3161EED10A400F20D58 /* PSI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		451ED2F91EED0C9800F20D58 /* HazeRadarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HazeRadarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazeRadarUITests.swift; sourceTree = "<group>"; };
 		451ED2FF1EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451ED30C1EED0FE200F20D58 /* psi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psi.json; sourceTree = "<group>"; };
+		451ED3161EED10A400F20D58 /* PSI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		451ED2DC1EED0C9800F20D58 /* HazeRadar */ = {
 			isa = PBXGroup;
 			children = (
+				451ED30C1EED0FE200F20D58 /* psi.json */,
 				451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */,
 				451ED2DF1EED0C9800F20D58 /* ViewController.swift */,
 				451ED2E11EED0C9800F20D58 /* Main.storyboard */,
 				451ED2E41EED0C9800F20D58 /* Assets.xcassets */,
 				451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */,
 				451ED2E91EED0C9800F20D58 /* Info.plist */,
+				451ED3161EED10A400F20D58 /* PSI.swift */,
 			);
 			path = HazeRadar;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451ED30D1EED0FE200F20D58 /* psi.json in Resources */,
 				451ED2E81EED0C9800F20D58 /* LaunchScreen.storyboard in Resources */,
 				451ED2E51EED0C9800F20D58 /* Assets.xcassets in Resources */,
 				451ED2E31EED0C9800F20D58 /* Main.storyboard in Resources */,
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451ED2E01EED0C9800F20D58 /* ViewController.swift in Sources */,
+				451ED3171EED10A400F20D58 /* PSI.swift in Sources */,
 				451ED2DE1EED0C9800F20D58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

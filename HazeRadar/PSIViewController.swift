@@ -7,22 +7,36 @@
 //
 
 import UIKit
+import MapKit
 
 class PSIViewController: UIViewController {
 
+    @IBOutlet var mapView: MKMapView!
+    var psiData:PSIData?
+    var currentDate = Date()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    @IBAction func onTouch(_ sender: Any) {
-        PSI().load()
+        setupMapView()
+        loadPSI()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func loadPSI(){
+
+        PSI().load(date: currentDate, success: { (data) in
+            
+            self.psiData = data
+            
+            DispatchQueue.main.async {
+                self.showAnnotations()
+            }
+            
+        }) { (message) in
+            print(message)
+        }
     }
-
-
+    
 }
 

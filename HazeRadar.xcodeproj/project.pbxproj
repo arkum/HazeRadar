@@ -17,6 +17,9 @@
 		451ED3191EED178F00F20D58 /* PSIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3181EED178F00F20D58 /* PSIData.swift */; };
 		451ED31B1EED179F00F20D58 /* PSIRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED31A1EED179F00F20D58 /* PSIRegion.swift */; };
 		451ED3211EED1C1D00F20D58 /* PSIBindingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3201EED1C1D00F20D58 /* PSIBindingTest.swift */; };
+		451ED32B1EED251300F20D58 /* PSIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED32A1EED251300F20D58 /* PSIAnnotation.swift */; };
+		451ED32D1EED254900F20D58 /* PSIViewControllerMapExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED32C1EED254900F20D58 /* PSIViewControllerMapExt.swift */; };
+		451ED32F1EED256700F20D58 /* PSIAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED32E1EED256700F20D58 /* PSIAnnotationView.swift */; };
 		F699AB705B24CC980502DBB4 /* Pods_HazeRadar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		451ED31A1EED179F00F20D58 /* PSIRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIRegion.swift; sourceTree = "<group>"; };
 		451ED3201EED1C1D00F20D58 /* PSIBindingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIBindingTest.swift; sourceTree = "<group>"; };
 		451ED3221EED217800F20D58 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/HazeRadar-adurcognnehnwhfabmuloiqneuar/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		451ED32A1EED251300F20D58 /* PSIAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIAnnotation.swift; sourceTree = "<group>"; };
+		451ED32C1EED254900F20D58 /* PSIViewControllerMapExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIViewControllerMapExt.swift; sourceTree = "<group>"; };
+		451ED32E1EED256700F20D58 /* PSIAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIAnnotationView.swift; sourceTree = "<group>"; };
 		750B076C7AD70045E4631DF1 /* Pods-HazeRadar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.debug.xcconfig"; sourceTree = "<group>"; };
 		C79B90153F6B5B5A53FEF67B /* Pods-HazeRadar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.release.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.release.xcconfig"; sourceTree = "<group>"; };
 		E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HazeRadar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,16 +99,11 @@
 		451ED2DC1EED0C9800F20D58 /* HazeRadar */ = {
 			isa = PBXGroup;
 			children = (
-				451ED30C1EED0FE200F20D58 /* psi.json */,
-				451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */,
-				451ED2DF1EED0C9800F20D58 /* PSIViewController.swift */,
-				451ED2E11EED0C9800F20D58 /* Main.storyboard */,
-				451ED2E41EED0C9800F20D58 /* Assets.xcassets */,
-				451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */,
-				451ED2E91EED0C9800F20D58 /* Info.plist */,
-				451ED3161EED10A400F20D58 /* PSI.swift */,
-				451ED3181EED178F00F20D58 /* PSIData.swift */,
-				451ED31A1EED179F00F20D58 /* PSIRegion.swift */,
+				451ED3241EED249500F20D58 /* Data */,
+				451ED3281EED24E200F20D58 /* Map */,
+				451ED3271EED24C300F20D58 /* VC */,
+				451ED3261EED24B500F20D58 /* UI */,
+				451ED3251EED24A600F20D58 /* App */,
 			);
 			path = HazeRadar;
 			sourceTree = "<group>";
@@ -114,6 +115,54 @@
 				451ED3201EED1C1D00F20D58 /* PSIBindingTest.swift */,
 			);
 			path = HazeRadarTests;
+			sourceTree = "<group>";
+		};
+		451ED3241EED249500F20D58 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				451ED30C1EED0FE200F20D58 /* psi.json */,
+				451ED3161EED10A400F20D58 /* PSI.swift */,
+				451ED3181EED178F00F20D58 /* PSIData.swift */,
+				451ED31A1EED179F00F20D58 /* PSIRegion.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		451ED3251EED24A600F20D58 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				451ED2E91EED0C9800F20D58 /* Info.plist */,
+				451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		451ED3261EED24B500F20D58 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				451ED2E11EED0C9800F20D58 /* Main.storyboard */,
+				451ED2E41EED0C9800F20D58 /* Assets.xcassets */,
+				451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		451ED3271EED24C300F20D58 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				451ED2DF1EED0C9800F20D58 /* PSIViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		451ED3281EED24E200F20D58 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				451ED32A1EED251300F20D58 /* PSIAnnotation.swift */,
+				451ED32C1EED254900F20D58 /* PSIViewControllerMapExt.swift */,
+				451ED32E1EED256700F20D58 /* PSIAnnotationView.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		545436A8AFD9241C8F144393 /* Frameworks */ = {
@@ -294,6 +343,9 @@
 				451ED2E01EED0C9800F20D58 /* PSIViewController.swift in Sources */,
 				451ED3171EED10A400F20D58 /* PSI.swift in Sources */,
 				451ED31B1EED179F00F20D58 /* PSIRegion.swift in Sources */,
+				451ED32B1EED251300F20D58 /* PSIAnnotation.swift in Sources */,
+				451ED32F1EED256700F20D58 /* PSIAnnotationView.swift in Sources */,
+				451ED32D1EED254900F20D58 /* PSIViewControllerMapExt.swift in Sources */,
 				451ED3191EED178F00F20D58 /* PSIData.swift in Sources */,
 				451ED2DE1EED0C9800F20D58 /* AppDelegate.swift in Sources */,
 			);

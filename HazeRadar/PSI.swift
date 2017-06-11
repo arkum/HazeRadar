@@ -10,7 +10,32 @@ import Foundation
 import SwiftyJSON
 
 
+struct Settings {
+    static let psiEndpoint = "https://api.data.gov.sg/v1/environment/psi"
+    static let apiKey = "7n4g8nEYhzDDD0mwVuz0ctRH2sTWmoxd"
+    static let apiKeyHeaderField = "api-key"
+    static let dateTimeField = "date_time"
+    static let dateFormat = "YYYY-MM-dd'T'HH:mm:ss"
+}
+
 class PSI{
+    
+    func load(date: Date, success: @escaping (PSIData) -> (), fail: @escaping (String?)-> ()) {
+        var request = URLRequest(url:url(date: date))
+        request.addValue(Settings.apiKey, forHTTPHeaderField: Settings.apiKeyHeaderField)
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+            if error != nil {
+                fail(error?.localizedDescription)
+            } else {
+                if let psidata = data {
+                    success(self.loadData(json: JSON(psidata)))
+                }
+            }
+        }
+        task.resume()
+    }
     
     func load() -> PSIData {
         return loadData(json: JSON(self.loadLocal()))
@@ -47,6 +72,20 @@ class PSI{
                          psi: readings["readings"]["psi_twenty_four_hourly"][regionName.rawValue.lowercased()].int)
     }
     
+    func url (date: Date) -> URL {
+        let params = "\(Settings.dateTimeField)=\(formatDate(date: date).addingPercentEncoding (withAllowedCharacters: .urlHostAllowed)!)"
+        let url = URL(string: "\(Settings.psiEndpoint)?\(params)")
+        return url!
+    }
+    
+    
+    func formatDate (date:Date) -> String{
+        let formatter = DateFormatter()
+        formatter.dateFormat = Settings.dateFormat
+        return formatter.string(from: date)
+    }
+
+    
     func loadLocal() -> Any {
         if let path = Bundle.main.path(forResource: "psi", ofType: "json"){
             if let jsonData = try? Data(contentsOf: URL(fileURLWithPath: path ))  {
@@ -56,6 +95,13 @@ class PSI{
             }
         }
         return []
+    }
+}
+
+
+extension Int {
+    var stringValue:String {
+        return "\(self)"
     }
 }
 

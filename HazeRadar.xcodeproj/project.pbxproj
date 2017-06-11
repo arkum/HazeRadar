@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		451ED2DE1EED0C9800F20D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */; };
+		451ED2E01EED0C9800F20D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2DF1EED0C9800F20D58 /* ViewController.swift */; };
+		451ED2E31EED0C9800F20D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451ED2E11EED0C9800F20D58 /* Main.storyboard */; };
+		451ED2E51EED0C9800F20D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451ED2E41EED0C9800F20D58 /* Assets.xcassets */; };
+		451ED2E81EED0C9800F20D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */; };
+		451ED2F31EED0C9800F20D58 /* HazeRadarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2F21EED0C9800F20D58 /* HazeRadarTests.swift */; };
+		451ED2FE1EED0C9800F20D58 /* HazeRadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		451ED2EF1EED0C9800F20D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451ED2D21EED0C9700F20D58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 451ED2D91EED0C9800F20D58;
+			remoteInfo = HazeRadar;
+		};
+		451ED2FA1EED0C9800F20D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451ED2D21EED0C9700F20D58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 451ED2D91EED0C9800F20D58;
+			remoteInfo = HazeRadar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		451ED2DA1EED0C9800F20D58 /* HazeRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazeRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		451ED2DF1EED0C9800F20D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		451ED2E21EED0C9800F20D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		451ED2E41EED0C9800F20D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		451ED2E71EED0C9800F20D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		451ED2E91EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451ED2EE1EED0C9800F20D58 /* HazeRadarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HazeRadarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		451ED2F21EED0C9800F20D58 /* HazeRadarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazeRadarTests.swift; sourceTree = "<group>"; };
+		451ED2F41EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451ED2F91EED0C9800F20D58 /* HazeRadarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HazeRadarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazeRadarUITests.swift; sourceTree = "<group>"; };
+		451ED2FF1EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		451ED2D71EED0C9800F20D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451ED2EB1EED0C9800F20D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451ED2F61EED0C9800F20D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		451ED2D11EED0C9700F20D58 = {
+			isa = PBXGroup;
+			children = (
+				451ED2DC1EED0C9800F20D58 /* HazeRadar */,
+				451ED2F11EED0C9800F20D58 /* HazeRadarTests */,
+				451ED2FC1EED0C9800F20D58 /* HazeRadarUITests */,
+				451ED2DB1EED0C9800F20D58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		451ED2DB1EED0C9800F20D58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				451ED2DA1EED0C9800F20D58 /* HazeRadar.app */,
+				451ED2EE1EED0C9800F20D58 /* HazeRadarTests.xctest */,
+				451ED2F91EED0C9800F20D58 /* HazeRadarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		451ED2DC1EED0C9800F20D58 /* HazeRadar */ = {
+			isa = PBXGroup;
+			children = (
+				451ED2DD1EED0C9800F20D58 /* AppDelegate.swift */,
+				451ED2DF1EED0C9800F20D58 /* ViewController.swift */,
+				451ED2E11EED0C9800F20D58 /* Main.storyboard */,
+				451ED2E41EED0C9800F20D58 /* Assets.xcassets */,
+				451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */,
+				451ED2E91EED0C9800F20D58 /* Info.plist */,
+			);
+			path = HazeRadar;
+			sourceTree = "<group>";
+		};
+		451ED2F11EED0C9800F20D58 /* HazeRadarTests */ = {
+			isa = PBXGroup;
+			children = (
+				451ED2F21EED0C9800F20D58 /* HazeRadarTests.swift */,
+				451ED2F41EED0C9800F20D58 /* Info.plist */,
+			);
+			path = HazeRadarTests;
+			sourceTree = "<group>";
+		};
+		451ED2FC1EED0C9800F20D58 /* HazeRadarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */,
+				451ED2FF1EED0C9800F20D58 /* Info.plist */,
+			);
+			path = HazeRadarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		451ED2D91EED0C9800F20D58 /* HazeRadar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451ED3021EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadar" */;
+			buildPhases = (
+				451ED2D61EED0C9800F20D58 /* Sources */,
+				451ED2D71EED0C9800F20D58 /* Frameworks */,
+				451ED2D81EED0C9800F20D58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HazeRadar;
+			productName = HazeRadar;
+			productReference = 451ED2DA1EED0C9800F20D58 /* HazeRadar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		451ED2ED1EED0C9800F20D58 /* HazeRadarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451ED3051EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadarTests" */;
+			buildPhases = (
+				451ED2EA1EED0C9800F20D58 /* Sources */,
+				451ED2EB1EED0C9800F20D58 /* Frameworks */,
+				451ED2EC1EED0C9800F20D58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				451ED2F01EED0C9800F20D58 /* PBXTargetDependency */,
+			);
+			name = HazeRadarTests;
+			productName = HazeRadarTests;
+			productReference = 451ED2EE1EED0C9800F20D58 /* HazeRadarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		451ED2F81EED0C9800F20D58 /* HazeRadarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451ED3081EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadarUITests" */;
+			buildPhases = (
+				451ED2F51EED0C9800F20D58 /* Sources */,
+				451ED2F61EED0C9800F20D58 /* Frameworks */,
+				451ED2F71EED0C9800F20D58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				451ED2FB1EED0C9800F20D58 /* PBXTargetDependency */,
+			);
+			name = HazeRadarUITests;
+			productName = HazeRadarUITests;
+			productReference = 451ED2F91EED0C9800F20D58 /* HazeRadarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		451ED2D21EED0C9700F20D58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Bytters;
+				TargetAttributes = {
+					451ED2D91EED0C9800F20D58 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					451ED2ED1EED0C9800F20D58 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 451ED2D91EED0C9800F20D58;
+					};
+					451ED2F81EED0C9800F20D58 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 451ED2D91EED0C9800F20D58;
+					};
+				};
+			};
+			buildConfigurationList = 451ED2D51EED0C9700F20D58 /* Build configuration list for PBXProject "HazeRadar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 451ED2D11EED0C9700F20D58;
+			productRefGroup = 451ED2DB1EED0C9800F20D58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				451ED2D91EED0C9800F20D58 /* HazeRadar */,
+				451ED2ED1EED0C9800F20D58 /* HazeRadarTests */,
+				451ED2F81EED0C9800F20D58 /* HazeRadarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		451ED2D81EED0C9800F20D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451ED2E81EED0C9800F20D58 /* LaunchScreen.storyboard in Resources */,
+				451ED2E51EED0C9800F20D58 /* Assets.xcassets in Resources */,
+				451ED2E31EED0C9800F20D58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451ED2EC1EED0C9800F20D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451ED2F71EED0C9800F20D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		451ED2D61EED0C9800F20D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451ED2E01EED0C9800F20D58 /* ViewController.swift in Sources */,
+				451ED2DE1EED0C9800F20D58 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451ED2EA1EED0C9800F20D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451ED2F31EED0C9800F20D58 /* HazeRadarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451ED2F51EED0C9800F20D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451ED2FE1EED0C9800F20D58 /* HazeRadarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		451ED2F01EED0C9800F20D58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 451ED2D91EED0C9800F20D58 /* HazeRadar */;
+			targetProxy = 451ED2EF1EED0C9800F20D58 /* PBXContainerItemProxy */;
+		};
+		451ED2FB1EED0C9800F20D58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 451ED2D91EED0C9800F20D58 /* HazeRadar */;
+			targetProxy = 451ED2FA1EED0C9800F20D58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		451ED2E11EED0C9800F20D58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451ED2E21EED0C9800F20D58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		451ED2E61EED0C9800F20D58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451ED2E71EED0C9800F20D58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		451ED3001EED0C9800F20D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		451ED3011EED0C9800F20D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		451ED3031EED0C9800F20D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HazeRadar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		451ED3041EED0C9800F20D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HazeRadar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		451ED3061EED0C9800F20D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HazeRadarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HazeRadar.app/HazeRadar";
+			};
+			name = Debug;
+		};
+		451ED3071EED0C9800F20D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HazeRadarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HazeRadar.app/HazeRadar";
+			};
+			name = Release;
+		};
+		451ED3091EED0C9800F20D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HazeRadarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HazeRadar;
+			};
+			name = Debug;
+		};
+		451ED30A1EED0C9800F20D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HazeRadarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytters.HazeRadarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HazeRadar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		451ED2D51EED0C9700F20D58 /* Build configuration list for PBXProject "HazeRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451ED3001EED0C9800F20D58 /* Debug */,
+				451ED3011EED0C9800F20D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		451ED3021EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451ED3031EED0C9800F20D58 /* Debug */,
+				451ED3041EED0C9800F20D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		451ED3051EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451ED3061EED0C9800F20D58 /* Debug */,
+				451ED3071EED0C9800F20D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		451ED3081EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451ED3091EED0C9800F20D58 /* Debug */,
+				451ED30A1EED0C9800F20D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 451ED2D21EED0C9700F20D58 /* Project object */;
+}

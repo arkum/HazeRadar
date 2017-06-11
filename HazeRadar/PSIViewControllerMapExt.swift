@@ -11,15 +11,15 @@ import MapKit
 extension PSIViewController: MKMapViewDelegate {
     
     func setupMapView(){
-        // center map
+        
         mapView.delegate = self
+        
+        // center map
         centerMapOnLocation()
     }
     
     func showAnnotations(){
-        
         mapView.removeAnnotations(mapView.annotations)
-        
         addAnnotation(data: self.psiData?.central)
         addAnnotation(data: self.psiData?.north)
         addAnnotation(data: self.psiData?.east)
@@ -27,7 +27,6 @@ extension PSIViewController: MKMapViewDelegate {
         addAnnotation(data: self.psiData?.west)
     }
     
-    // Draw regions
     func addAnnotation(data: PSIRegion?) {
         if let psiData = data {
             if  let psi = psiData.psi,
@@ -41,12 +40,9 @@ extension PSIViewController: MKMapViewDelegate {
                                                   region: regionName.rawValue,
                                                   coordinate: location)
                 mapView.addAnnotation(psiAnnotation)
-                
-                //addRadiusCircle(location: location)
             }
         }
     }
-    
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? PSIAnnotation {
@@ -54,30 +50,11 @@ extension PSIViewController: MKMapViewDelegate {
         }
         return nil
     }
-    
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        if overlay.isKind(of: MKCircle.self){
-            let circleRenderer = MKCircleRenderer(overlay: overlay)
-            circleRenderer.fillColor = UIColor.blue.withAlphaComponent(0.1)
-            circleRenderer.strokeColor = UIColor.blue
-            circleRenderer.lineWidth = 1
-            return circleRenderer
-        }
-        return MKOverlayRenderer(overlay: overlay)
-    }
-    
-    func addRadiusCircle(location: CLLocationCoordinate2D){
-        self.mapView.delegate = self
-        let circle = MKCircle(center: location, radius: 1000)
-        self.mapView.add(circle)
-    }
-    
+   
     func centerMapOnLocation() {
         let location = CLLocation(latitude: 1.364598, longitude: 103.807244)
         let regionRadius: CLLocationDistance = 20000
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
-    
-    
 }

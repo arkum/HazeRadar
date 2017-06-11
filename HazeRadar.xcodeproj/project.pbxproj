@@ -16,6 +16,7 @@
 		451ED2FE1EED0C9800F20D58 /* HazeRadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED2FD1EED0C9800F20D58 /* HazeRadarUITests.swift */; };
 		451ED30D1EED0FE200F20D58 /* psi.json in Resources */ = {isa = PBXBuildFile; fileRef = 451ED30C1EED0FE200F20D58 /* psi.json */; };
 		451ED3171EED10A400F20D58 /* PSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3161EED10A400F20D58 /* PSI.swift */; };
+		F699AB705B24CC980502DBB4 /* Pods_HazeRadar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		451ED2FF1EED0C9800F20D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451ED30C1EED0FE200F20D58 /* psi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psi.json; sourceTree = "<group>"; };
 		451ED3161EED10A400F20D58 /* PSI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSI.swift; sourceTree = "<group>"; };
+		750B076C7AD70045E4631DF1 /* Pods-HazeRadar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.debug.xcconfig"; sourceTree = "<group>"; };
+		C79B90153F6B5B5A53FEF67B /* Pods-HazeRadar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.release.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.release.xcconfig"; sourceTree = "<group>"; };
+		E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HazeRadar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F699AB705B24CC980502DBB4 /* Pods_HazeRadar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				451ED2F11EED0C9800F20D58 /* HazeRadarTests */,
 				451ED2FC1EED0C9800F20D58 /* HazeRadarUITests */,
 				451ED2DB1EED0C9800F20D58 /* Products */,
+				B67B071578F1A3B69B5734B8 /* Pods */,
+				545436A8AFD9241C8F144393 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +138,23 @@
 			path = HazeRadarUITests;
 			sourceTree = "<group>";
 		};
+		545436A8AFD9241C8F144393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B67B071578F1A3B69B5734B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				750B076C7AD70045E4631DF1 /* Pods-HazeRadar.debug.xcconfig */,
+				C79B90153F6B5B5A53FEF67B /* Pods-HazeRadar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 451ED3021EED0C9800F20D58 /* Build configuration list for PBXNativeTarget "HazeRadar" */;
 			buildPhases = (
+				A22DE91348217CD570DFF3C3 /* [CP] Check Pods Manifest.lock */,
 				451ED2D61EED0C9800F20D58 /* Sources */,
 				451ED2D71EED0C9800F20D58 /* Frameworks */,
 				451ED2D81EED0C9800F20D58 /* Resources */,
+				FFD8D066B4D85AC5A5F5393E /* [CP] Embed Pods Frameworks */,
+				66B10BBDC687FCAAF9F3B04C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +287,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66B10BBDC687FCAAF9F3B04C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A22DE91348217CD570DFF3C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD8D066B4D85AC5A5F5393E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		451ED2D61EED0C9800F20D58 /* Sources */ = {
@@ -418,6 +493,7 @@
 		};
 		451ED3031EED0C9800F20D58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750B076C7AD70045E4631DF1 /* Pods-HazeRadar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HazeRadar/Info.plist;
@@ -430,6 +506,7 @@
 		};
 		451ED3041EED0C9800F20D58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79B90153F6B5B5A53FEF67B /* Pods-HazeRadar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HazeRadar/Info.plist;

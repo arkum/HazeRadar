@@ -20,6 +20,7 @@
 		451ED32B1EED251300F20D58 /* PSIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED32A1EED251300F20D58 /* PSIAnnotation.swift */; };
 		451ED32D1EED254900F20D58 /* PSIViewControllerMapExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED32C1EED254900F20D58 /* PSIViewControllerMapExt.swift */; };
 		451ED32F1EED256700F20D58 /* PSIAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED32E1EED256700F20D58 /* PSIAnnotationView.swift */; };
+		451ED3391EED311600F20D58 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451ED3381EED311600F20D58 /* Utility.swift */; };
 		F699AB705B24CC980502DBB4 /* Pods_HazeRadar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		451ED32A1EED251300F20D58 /* PSIAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIAnnotation.swift; sourceTree = "<group>"; };
 		451ED32C1EED254900F20D58 /* PSIViewControllerMapExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIViewControllerMapExt.swift; sourceTree = "<group>"; };
 		451ED32E1EED256700F20D58 /* PSIAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIAnnotationView.swift; sourceTree = "<group>"; };
+		451ED3381EED311600F20D58 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		750B076C7AD70045E4631DF1 /* Pods-HazeRadar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.debug.xcconfig"; sourceTree = "<group>"; };
 		C79B90153F6B5B5A53FEF67B /* Pods-HazeRadar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HazeRadar.release.xcconfig"; path = "Pods/Target Support Files/Pods-HazeRadar/Pods-HazeRadar.release.xcconfig"; sourceTree = "<group>"; };
 		E828BBB89935B5818FE4AE08 /* Pods_HazeRadar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HazeRadar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 		451ED2DC1EED0C9800F20D58 /* HazeRadar */ = {
 			isa = PBXGroup;
 			children = (
+				451ED3351EED30A200F20D58 /* Common */,
 				451ED3241EED249500F20D58 /* Data */,
 				451ED3281EED24E200F20D58 /* Map */,
 				451ED3271EED24C300F20D58 /* VC */,
@@ -163,6 +166,14 @@
 				451ED32E1EED256700F20D58 /* PSIAnnotationView.swift */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		451ED3351EED30A200F20D58 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				451ED3381EED311600F20D58 /* Utility.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		545436A8AFD9241C8F144393 /* Frameworks */ = {
@@ -340,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451ED3391EED311600F20D58 /* Utility.swift in Sources */,
 				451ED2E01EED0C9800F20D58 /* PSIViewController.swift in Sources */,
 				451ED3171EED10A400F20D58 /* PSI.swift in Sources */,
 				451ED31B1EED179F00F20D58 /* PSIRegion.swift in Sources */,
